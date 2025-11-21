@@ -307,4 +307,5 @@ timestamp,value
 
 ## 🤝 贡献
 
-作者：庞力铖  	 邮箱：3522236586@qq.com  	GitHub仓库：
+作者：庞力铖  	 邮箱：3522236586@qq.com  	GitHub仓库：https://github.com/Plc912/-MCP-/blob/85b7df96326116aa36cefbac8d813f97b43db299/Anomaly_score_fusion/README.md
+
