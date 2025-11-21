@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  anomaly-fusion:
+    build: .
+    container_name: anomaly_fusion_mcp
+    ports:
+      - "2250:2250"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    environment:
+      - PORT=2250
+      - LOG_LEVEL=INFO
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:2250/sse"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+

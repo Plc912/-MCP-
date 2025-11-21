@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "anomaly_fusion": {
+      "name": "anomaly-fusion-mcp",
+      "command": "python",
+      "args": [
+        "mcp_server.py"
+      ],
+      "transport": "sse",
+      "port": 2250
+    }
+  }
+}
+
